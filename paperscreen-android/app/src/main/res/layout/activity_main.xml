@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#F2EFE8">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PaperScreen"
+        android:textSize="28sp"
+        android:textColor="#2C1A0E"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kindle paper texture for your screen"
+        android:textSize="14sp"
+        android:textColor="#6B4226"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btn_toggle"
+        android:layout_width="200dp"
+        android:layout_height="52dp"
+        android:text="Turn On"
+        android:textSize="16sp"
+        android:backgroundTint="#2C1A0E"
+        android:textColor="#F2EFE8"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off"
+        android:textSize="16sp"
+        android:textColor="#2C1A0E"
+        android:layout_marginBottom="16dp"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_opacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:progressTint="#2C1A0E"
+        android:thumbTint="#2C1A0E"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_lighter"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Lighter"
+            android:backgroundTint="#C8B89A"
+            android:textColor="#2C1A0E"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btn_darker"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Darker"
+            android:backgroundTint="#6B4226"
+            android:textColor="#F2EFE8"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close this app — the overlay stays active"
+        android:textSize="12sp"
+        android:textColor="#9C7A5A"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>

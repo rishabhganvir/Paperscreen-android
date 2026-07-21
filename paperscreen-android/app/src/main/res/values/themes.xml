@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PaperScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#2C1A0E</item>
+        <item name="colorPrimaryDark">#1A0E07</item>
+        <item name="colorAccent">#6B4226</item>
+        <item name="android:windowBackground">#F2EFE8</item>
+    </style>
+</resources>
