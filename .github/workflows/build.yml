@@ -25,10 +25,11 @@ jobs:
           gradle-version: '8.2'
 
       - name: Build release APK
+        working-directory: paperscreen-android
         run: gradle assembleRelease
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: PaperScreen
-          path: app/build/outputs/apk/release/app-release.apk
+          path: paperscreen-android/app/build/outputs/apk/release/app-release.apk
