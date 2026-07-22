@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Overlay permission — lets us draw on top of every app -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <!-- Start on boot -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:allowBackup="false"
@@ -12,7 +12,6 @@
         android:label="PaperScreen"
         android:theme="@style/Theme.PaperScreen">
 
-        <!-- Main activity — permission grant + controls -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -23,12 +22,11 @@
             </intent-filter>
         </activity>
 
-        <!-- Overlay service — draws the paper texture -->
         <service
             android:name=".OverlayService"
-            android:exported="false" />
+            android:exported="false"
+            android:foregroundServiceType="specialUse" />
 
-        <!-- Boot receiver — restarts overlay after reboot -->
         <receiver
             android:name=".BootReceiver"
             android:exported="true">
